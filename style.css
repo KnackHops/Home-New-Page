@@ -1,0 +1,44 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, .container{
+    height: 100%;
+}
+
+.container{
+    display: grid;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    list-style: none;
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+}
+
+.footer li input[type="button"]{
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;;
+}
+
+.btnGear{
+    background: url(./icons/gearicon.png), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+}
+
+.btnGrid{
+    background: url(./icons/gridicon.png), linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.3));
+}
+
+
+
