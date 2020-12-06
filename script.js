@@ -1,6 +1,33 @@
 const container = document.querySelector(".container");
 const box = document.querySelectorAll(".box");
 
-box[0].setAttribute("src","boxes/123743049_646741469342973_7638873703721024418_n.jpg");
+/* buttons */
+const btnMenu = document.querySelector(".btnMenu");
 
+/* settings */
+const menuFrame = document.querySelector(".menuFrame");
 
+const chckBoxes = () => {
+    
+}
+
+const menuFrameMagic = () => {
+    if(menuFrame.style.display !== "none"){
+        menuFrame.style.display = "none";
+    }else{
+        menuFrame.style.display = "flex";
+    }
+}
+
+const clickExit = e => {
+    if(e.target.className === menuFrame.className){
+        menuFrameMagic();
+    }else if(e.target.className === "noneyet"){
+        
+    }
+}
+
+menuFrameMagic();
+
+btnMenu.addEventListener("click", menuFrameMagic);
+window.addEventListener("click", clickExit);
