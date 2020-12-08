@@ -11,15 +11,36 @@
     </head>
     <body>
         <ul class="gD container">
-            <li><a href="" target="_blank"><img class="sizingFix box"></a></li>
-            <li><a href="" target="_blank"><img class="sizingFix box"></a></li>
-            <li><a href="" target="_blank"><img class="sizingFix box"></a></li>
-            <li><a href="" target="_blank"><img class="sizingFix box"></a></li>
+<!--            <li><a href="" target="_blank" class="fD><img class="box"></a></li>-->
         </ul>
-        <ul class="fD footer">
+        <ul class="fD posF footer">
                 <li><button class="btnMenu"></button></li>
                 <li><button class="btnGrid"></button></li>
             </ul>
+        
+        <div class="fD posF menuFrame">
+            <div class="fD menuPanel">
+                <div class="btnExit">✕</div>
+                <div class="imgInputDiv">
+                    <label>Image URL here:</label>
+                    <input class="textImg" type="url">
+                    <div class="loadIcon imgIcon">↻</div>
+                    <div class="checkIcon imgIcon">✓</div>
+                    <div class="wrongIcon imgIcon">✕</div>
+                </div>
+                <div class="imgDiv">
+                    <img id="imgPreview">
+                    <label class="imgDefault">Image Preview</label>
+                </div>
+                <div class="urlInputDiv">
+                    <label>Website URL here:</label>
+                    <input class="textURL" type="url">
+                    <div class="loadIcon urlIcon">↻</div>
+                    <div class="checkIcon urlIcon">✓</div>
+                    <div class="wrongIcon urlIcon">✕</div>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
