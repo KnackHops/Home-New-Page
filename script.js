@@ -57,6 +57,7 @@ const imageDrop = e =>{
                 return;
             }
             
+            
         }
         
         reader.readAsBinaryString(file);
